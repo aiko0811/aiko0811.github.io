@@ -25,9 +25,25 @@ $(document).ready(function(){
 
 	});
 
-	$("#form-submit").click(function{
-		$("#name-result").text($("#user-email").val());
+	$("#form-submit").click(function(e){
+
+		e.preventDefault();
+
+		$("#name-result").text($("#user-name").val());
 		$("#email-result").text($("#user-email").val());
+
+		if($("user-happy").is(":checked"))
+		{
+			$("happy-result").text("are");
+		}else{
+			$("happy-result").text("aren't");
+		}
+
+
+        var countryVal = $("user-country").val();
+		var countryName = $("#user-country option [value='" + countryVal + "']").text()
+		$("#country-result").text(countryName);
+
 	});
 
 

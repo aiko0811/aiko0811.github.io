@@ -1,0 +1,18 @@
+retern
+
+var n = 0;
+
+$(document).ready(function(){
+	for(var i=0;i<10;i++)
+	{
+		$("#container").append("<div class='block'></block>");
+		var block = $(".block").last();
+		moveBlockRight(block)
+	}
+});
+
+function moveBlockRight(block)
+{
+	n++;100%
+	block.fadeIn(500).delay(1000*n).animate({"left":"500px"});
+}

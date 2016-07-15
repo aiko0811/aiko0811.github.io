@@ -12,10 +12,8 @@
 	padding: 50px;
 	font-size: 20px;
 	text-align: center;
-	background-repeat: no-repeat;
-	background-position: right bottom;
-	background-image: url(http://01.gatag.net/img/201507/18s/gatag-00011147.jpg);
-	border: solid 15px rgba(3,3,137,1);
+	background-color: #000080;
+	color: #FFFFFF;
 }
 #box-a{
 	width: 100%;
@@ -23,10 +21,8 @@
 	padding: 50px;
 	font-size: 20px;
 	text-align: center;
-	background-image: url(http://01.gatag.net/img/201507/17s/gatag-00011022.jpg);
-	background-repeat: no-repeat;
-	background-position: center bottom;
-	border: solid 15px rgba(255,0,0,1);
+	background-color: #990000;
+	color: #FFFFFF;
 }
 #box-b{
 	width: 100%;
@@ -65,32 +61,44 @@
 	font-size: 20px;
 	text-align: center;
 	border: solid 15px rgba(255,0,0,1);
-}</style>
+}
+.soldier1 {
+	width: 600px;
+	height: 600px;
+	position: absolute;
+}
+</style>
 </head>
 <body>
 
 <div id="site-box">
-<p>London Bridge Is Falling Down</p> </div>
-
+     <p>London Bridge Is Falling</p> 
+    
+     <button id="left">&laquo;</button>
+     <button id="right">&raquo;</button>
+     <div class="soldier1"><image src= "london2.gif" width="10%" align="center">
+     </div>
+</div>
+   
 <div id="box-a">
-<p>Falling Down</p> </div>
-
+     <p>Falling</p> </div>
+         
 <div id="box-b">
 <p>Falling Down</p> </div>
 
 <div id="box-c">
 <p>London Bridge Is Falling Down</p> </div>
+
 <div id="box-d">
 <p>My Fair</p> </div>
 
 <div id="box-e"> 
-<fieldset>
-<label>
-Lady...
-</label>
-<input type="checkbox" id="user-lady">
-</fieldset>
-</div>
+	<fieldset>
+		<label>
+			Lady...
+		</label>
+		<input type="checkbox" id="user-lady">
+	</fieldset> </div>
 
 </body>
 </html>

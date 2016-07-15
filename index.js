@@ -6,7 +6,6 @@ $(document).ready(function(){
 		$("p").stop().animate({fontSize:"15px"});
 	});
 
-
 	$("#user-lady").click(function(){
 	    if($(this).is(":checked"))
 	    {
@@ -17,6 +16,13 @@ $(document).ready(function(){
         }
     });
 
+    $("#right").click(function(){
+    	$(".soldier1").animate({"left":"+=50px"},"slow");
+    });
+
+    $("#left").click(function(){
+    	$(".soldier1").animate({"left": "-=50px"},"slow");
+    });
 });
 	
 

@@ -8,6 +8,7 @@ $(document).ready(function(){
             type: "GET",
             data: {
                 price: $('#car-price').val()
+                color: $('#car-color').val()
             }
           });
     });

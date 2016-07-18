@@ -10,9 +10,9 @@ $(document).ready(function(){
 	    if($(this).is(":checked"))
 	    {
 	    	$("#smile").remove();
-	    	$(this).parent().append("<span id='smile'>:)</span>");
+	    	$(this).parent().append("<span id='smile'>8:)</span>");
         }else{
-        	$("#smile").text(":(");
+        	$("#smile").text("8:(");
         }
     });
 
@@ -23,7 +23,14 @@ $(document).ready(function(){
     $("#left").click(function(){
     	$(".soldier1").animate({"left": "-=50px"},"slow");
     });
+
+    $("button").click(function(){
+  $("p").show("slow");
 });
-	
+  
+
+
+});
+
 
 

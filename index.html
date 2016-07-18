@@ -30,10 +30,8 @@
 	padding: 50px;
 	font-size: 20px;
 	text-align: center;
-	background-image: url(http://01.gatag.net/img/201507/18s/gatag-00011147.jpg);
-	background-repeat: no-repeat;
-	background-position: left bottom;
-	border: solid 15px rgba(3,3,137,1);
+	background-color: #FFFFFF;
+	color: #000080;
 }
 #box-c{
 	width: 100%;
@@ -41,10 +39,8 @@
 	padding: 50px;
 	font-size: 20px;
 	text-align: center;
-	background-image: url(http://01.gatag.net/img/201507/17s/gatag-00011022.jpg);
-	background-repeat: no-repeat;
-	background-position: left bottom;
-	border: solid 15px rgba(255,0,0,1);
+	background-color: #000080;
+	color: #FFFFFF;
 	}
 #box-d{
 	width: 100%;
@@ -52,7 +48,8 @@
 	padding: 50px;
 	font-size: 20px;
 	text-align: center;
-	border: solid 15px rgba(3,3,137,1);
+	background-color: #990000;
+	color: #FFFFFF;
 }
 #box-e{
 	width: 100%;
@@ -60,45 +57,79 @@
 	padding: 50px;
 	font-size: 20px;
 	text-align: center;
-	border: solid 15px rgba(255,0,0,1);
+	background-color: #FFFFFF
+	color: #000080;
 }
 .soldier1 {
 	width: 800px;
 	height: 800px;
 	position: absolute;
 }
+.push{
+	height: 80px;
+    width: 80px;
+    display: none;
+    float: left;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.bus1{
+	height: 40px;
+	width: 40px;
+	position: absolute;
+
+}
+
+}
 </style>
 </head>
+
 <body>
 
 <div id="site-box">
-     <p>London Bridge Is Falling Down</p> 
+     <p><font face="Courier New">London Bridge Is Falling Down</p></font>
+     <div class="london3"><image src="london3.gif" width=30% align="center"></image></div>
     
-     <button id="left">&laquo;</button>
-     <button id="right">&raquo;</button>
-     <div class="soldier1"><image src= "london2.gif" width="10%" align="center">
      </div>
-</div>
    
 <div id="box-a">
-     <p>Falling Down</p> </div>
-         
+     <p><font face="Courier New">Falling Down</p></font>
+     <button id="left">&laquo;</button>
+     <button id="right">&raquo;</button>
+     <div class="soldier1"><image src= "london2.gif" width="17%" align="bottom"></image>
+    </div>
+     </div>
+
+
 <div id="box-b">
-<p>Falling Down</p> </div>
+<p><font face="Courier New">Falling Down</p></font>
+<image src= "london1.gif" width="8%" align="right"></image>
+</div>
 
 <div id="box-c">
-<p>London Bridge Is Falling Down</p> </div>
+     <button>London Bridge Is Falling?</button>
+     <p style="display: none">Down!<font face="Couries New"></font></p>
+     <image src= "london2.gif" width="8%" align="center"></image>
+
+     </div>
 
 <div id="box-d">
-<p>My Fair</p> </div>
+<p><font face="Courier New">My Fair</p></font>
+<image src= "london1.gif" width="8%" align="left"></image>
+</div>
 
 <div id="box-e"> 
 	<fieldset>
-		<label>
+		<label><font face="Courier New">
 			Lady...
-		</label>
+		</font></label>
+
 		<input type="checkbox" id="user-lady">
-	</fieldset> </div>
+	</fieldset> 
+	<div class="bus1"><image src= "bus.gif" align="center"></image></div>
+	
+	</div>
 
 </body>
 </html>

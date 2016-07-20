@@ -1,0 +1,70 @@
+<html>
+<head>
+        <title>API Example</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+        <script>
+
+            $(document).ready(function(){
+            	$("#api_car").click(function(){
+            		$.ajax({
+            			url:"http://localhost:3000/add",
+            			sucess: ajaxHandler
+            		});
+            	});
+
+            });
+
+            function ajaxHandler(data)
+            {
+            	console.log(data);
+
+            	var typeString = $('#api_return').val()
+
+            	$("api_result").text("");
+
+            	var result = data[typeString].items;
+            	for(var i = 0; i < result.length; i++)
+            	{
+            		$("#api_result").append(result[i].name + "\n");
+
+            	}
+
+            }
+         </script>
+
+
+</head>
+<body>
+<div id="current_price"></div>
+
+        <textarea id="api_result" cols=60
+        <button id="price_up">Increase Price</button><button id="price_down">Decrease Price</button>
+
+        
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

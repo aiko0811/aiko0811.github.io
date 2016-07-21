@@ -30,6 +30,15 @@ app.get('/get_archive', function(req,res){
 
 });
 
+
+app.use(express.static('public'));
+app.get('/chat', function(req,res){
+  res.sendFile(__dirname + '/chat_client.html');
+});
+
+
+
+
 http.listen(3000, function () {
   console.log('Example app listening on port 3000!');
 });

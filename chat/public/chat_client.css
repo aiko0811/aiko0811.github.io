@@ -2,20 +2,33 @@ body
 {
 	font: 13px;
 	font-family: Helvetica, Arial, sans-serif;
-	background-color: #e6eae3;
+	background-color: #0d0015;
+}
+
+#name_button
+{
+    padding:0;
+    margin:0;
+    background:none;
+    border:0;
+    font-size:0;
+    line-height:0;
+    overflow:visible;
+    cursor:pointer;
 }
 
 #chat-log
 {
-	background-color: #a2d7dd;
+	background-color: #ffffff;
 	margin: 5px;
 	border: solid 1px #000;
 	position: fixed;
-	top: 30px;
+	top: 70px;
 	bottom: 90px;
 	width: 100%;
 	overflow-y: scroll;
 }
+
 
 #chat-log ul
 {
@@ -37,13 +50,14 @@ body
 */
 
 .them-line {
-	background-color: #f5e56b;
+	background-color: #0d0015;
 }
+
 
 form
 {
 	width: 100%;
-	background-color: #FFF;
+	background-color: #0d0015;
 	position: fixed;
 	bottom: 0px;
 }
@@ -54,12 +68,19 @@ form #chat-input
 	padding: 10px;
 	width: 90%;
 	margin-right: .5%;
+
 }
 
-form button
+form #form_button
 {
-	width: 9%;
-	background-color: #f5e56b;
-	border: none;
-	padding: 10px;
+	width: auto;
+    padding:0;
+    margin:0;
+    background:none;
+    border:0;
+    font-size:0;
+    line-height:0;
+    overflow:visible;
+    cursor:pointer;
 }
+

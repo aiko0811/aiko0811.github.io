@@ -24,29 +24,24 @@ $(document).ready(function(){
 
     });
 
-   
+    
 	
 	$("#chat-form").submit(function(){
 		var messageObject = {};
 		messageObject.username = $("#chat-name").val();
 		messageObject.text = $("#chat-input").val();
+		messageObject.emoji = $("#chat-input").val();
 
 		socket.emit("chat message", messageObject);
+		$("#chat-input").val("");
 		$("#chat-input").val("");
 		return false;
 
 	});
 
-	$("#chat-form").emojioneArea({
-  		pickerPosition: "top",
-  		filtersPosition: "bottom",
-    	tones: false,
-    	autocomplete: false,
-    	inline: true,
-    	hidePickerOnBlur: false,
-    });
+	
 
-
+	
 	socket.on('chat message',function(msg){
 		if(msg.username == $("#chat-name").val())
 		{
@@ -55,6 +50,5 @@ $(document).ready(function(){
 			$("#chat-log ul").append("<il class='them-line'><b>" + msg.username + "</b>: " + msg.text + "</li>");
 		}
 		
-	});
-
+		});
 });

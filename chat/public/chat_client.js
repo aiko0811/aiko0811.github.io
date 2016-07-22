@@ -28,7 +28,7 @@ $(document).ready(function(){
   		url : "http://api.wunderground.com/api/9bddf79585429e29/geolookup/conditions/q/MA/Boston.json",
   		dataType : "jsonp",
   		success : function(parsed_json) {
-  		var location = parsed_json['location']['Boston'];
+  		var location = parsed_json['location']['City'];
   		var temp_f = parsed_json['current_observation']['temp_f'];
   		alert("Current temperature in " + location + " is: " + temp_f);
   		}

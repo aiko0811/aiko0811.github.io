@@ -24,6 +24,16 @@ $(document).ready(function(){
 
     });
 
+    $.ajax({
+  		url : "http://api.wunderground.com/api/9bddf79585429e29/geolookup/conditions/q/MA/Boston.json",
+  		dataType : "jsonp",
+  		success : function(parsed_json) {
+  		var location = parsed_json['location']['Boston'];
+  		var temp_f = parsed_json['current_observation']['temp_f'];
+  		alert("Current temperature in " + location + " is: " + temp_f);
+  		}
+  	});
+
     
 	
 	$("#chat-form").submit(function(){
@@ -39,6 +49,14 @@ $(document).ready(function(){
 
 	});
 
+	$("#chat-input").emojioneArea({
+  		pickerPosition: "top",
+  		filtersPosition: "bottom",
+    	tones: false,
+    	autocomplete: false,
+    	inline: true,
+    	hidePickerOnBlur: false
+  	});
 	
 
 	
